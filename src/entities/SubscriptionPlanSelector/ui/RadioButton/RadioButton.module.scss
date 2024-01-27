@@ -1,0 +1,116 @@
+.RadioButton {
+  display: block;
+  background-color: transparent;
+  font-family: var(--font-plus-jakarta-sans);
+
+  border: 2px solid transparent;
+  border-radius: var(--border-radius-medium);
+  overflow: hidden;
+
+  &__input {
+    display: none;
+  }
+
+  &__top {
+    padding: 4px 12px;
+    color: var(--color-white);
+    background-color: var(--color-dark);
+    text-align: center;
+    font-size: var(--font-size-xs);
+    line-height: 16px;
+    font-weight: 700;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 88px;
+    padding: 16px;
+
+    background-color: var(--color-grey-100);
+  }
+
+  &__content-right {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+
+    padding: 8px 12px;
+    background-color: var(--color-grey-200);
+    border-radius: var(--border-radius-small);
+  }
+
+  &__currency-symbol {
+    font-size: var(--font-size-md);
+    line-height: 20px;
+    font-weight: 700;
+  }
+
+  &__price {
+    font-size: var(--font-size-xxxl);
+    line-height: 40px;
+    font-weight: 800;
+  }
+
+  &__label {
+    position: relative;
+    padding-left: 36px;
+
+    font-size: var(--font-size-lg);
+    font-weight: 700;
+    line-height: 24px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      width: 24px;
+      height: 24px;
+      border: 2px solid var(--color-grey-300);
+      border-radius: 50%;
+
+      transition-duration: var(--element-state-change-duration);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 5px;
+      top: 5px;
+
+      width: 14px;
+      height: 14px;
+      background-color: transparent;
+      border-radius: 50%;
+
+      transition-duration: var(--element-state-change-duration);
+    }
+
+    &:active::after {
+      background-color: var(--color-primary);
+      transition-duration: var(--element-state-change-duration);
+    }
+  }
+
+  &--checked {
+    border: 2px solid var(--color-primary);
+
+    .RadioButton__top {
+      background-color: var(--color-primary);
+    }
+
+    .RadioButton__label::before {
+      border-color: var(--color-primary);
+      transition-duration: var(--element-state-change-duration);
+    }
+
+    .RadioButton__label::after {
+      background-color: var(--color-primary);
+      transition-duration: var(--element-state-change-duration);
+    }
+  }
+}

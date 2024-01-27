@@ -1,9 +1,8 @@
-'use client';
 import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { routeLinks } from '@/shared/const/routes';
 
-const HomePage: React.FC = () => {
+export const QiuzPage: React.FC = () => {
   const router = useRouter();
 
   useEffect(() => {
@@ -12,5 +11,3 @@ const HomePage: React.FC = () => {
 
   return <></>;
 };
-
-export default HomePage;

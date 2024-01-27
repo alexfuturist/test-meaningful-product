@@ -1,0 +1,46 @@
+.WhatYouGet {
+  text-align: center;
+
+  &__title {
+    margin-bottom: 12px;
+    font-family: var(--font-lora);
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+    line-height: 32px;
+    text-align: center;
+    color: var(--color-black);
+  }
+
+  &__list {
+    display: block;
+
+    border: 1px solid var(--color-border-grey-3);
+    border-radius: var(--border-radius-medium);
+    box-shadow: var(--box-shadow);
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px 24px;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid var(--color-border-grey-3);
+    }
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__text {
+    font-family: var(--font-plus-jakarta-sans);
+    font-size: var(--font-size-md);
+    font-weight: 500;
+    line-height: 24px;
+    text-align: start;
+    color: var(--color-black);
+  }
+}

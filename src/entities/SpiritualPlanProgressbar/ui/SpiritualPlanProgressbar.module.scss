@@ -1,0 +1,13 @@
+.SpiritualPlanProgressbar {
+  text-align: center;
+
+  &__title {
+    margin-bottom: 24px;
+    font-family: var(--font-lora);
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+    line-height: 32px;
+    text-align: center;
+    color: var(--color-dark);
+  }
+}

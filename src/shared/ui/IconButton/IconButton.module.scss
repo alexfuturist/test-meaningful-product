@@ -1,0 +1,18 @@
+.IconButton {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 40px;
+  width: 40px;
+  border-radius: var(--border-radius-medium);
+
+  transition: var(--element-state-change-duration);
+
+  &:hover,
+  &:focus-visible,
+  &:active {
+    background-color: var(--color-grey-100);
+    transition: var(--element-state-change-duration);
+  }
+}

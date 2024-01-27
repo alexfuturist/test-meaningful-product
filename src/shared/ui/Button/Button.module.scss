@@ -1,0 +1,23 @@
+.Button {
+  padding: 0 24px;
+  min-height: 56px;
+  width: 100%;
+
+  font-family: var(--font-plus-jakarta-sans);
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  border-radius: var(--border-radius-large);
+  box-shadow: var(--box-shadow);
+
+  transition: var(--element-state-change-duration);
+
+  &:disabled {
+    color: var(--color-font-grey-1);
+    background-color: var(--color-white);
+    border: 2px solid var(--color-border-grey-1);
+    transition: var(--element-state-change-duration);
+    box-shadow: none;
+  }
+}
