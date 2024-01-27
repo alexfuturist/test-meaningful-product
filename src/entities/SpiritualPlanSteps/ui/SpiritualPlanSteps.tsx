@@ -5,11 +5,11 @@ import { SvgIcon } from '@/shared/ui/SvgIcon';
 import s from './SpiritualPlanSteps.module.scss';
 import { spiritualPlanStepsOptions } from '../const';
 
-interface IconButtonProps {
+interface SpiritualPlanStepsProps {
   className?: string;
 }
 
-export const SpiritualPlanSteps: React.FC<IconButtonProps> = (props) => {
+export const SpiritualPlanSteps: React.FC<SpiritualPlanStepsProps> = (props) => {
   const { className } = props;
 
   const [loadingIndex, setLoadingIndex] = useState(-1);

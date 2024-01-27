@@ -4,11 +4,11 @@ import cn from 'classnames';
 import { mockAchievementOptions, mockAchievementTitle } from '../mocks';
 import s from './AchievementStories.module.scss';
 
-interface IconButtonProps {
+interface AchievementStoriesProps {
   className?: string;
 }
 
-export const AchievementStories: React.FC<IconButtonProps> = (props) => {
+export const AchievementStories: React.FC<AchievementStoriesProps> = (props) => {
   const { className } = props;
 
   return (

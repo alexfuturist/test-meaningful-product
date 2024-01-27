@@ -4,12 +4,12 @@ import cn from 'classnames';
 import { IconButton } from '../IconButton';
 import s from './Header.module.scss';
 
-interface IconButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+interface HeaderProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   className?: string;
   onBackButtonClick?: () => void;
 }
 
-export const Header: React.FC<IconButtonProps> = (props) => {
+export const Header: React.FC<HeaderProps> = (props) => {
   const { className, onBackButtonClick } = props;
 
   return (

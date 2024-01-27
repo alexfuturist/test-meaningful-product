@@ -5,11 +5,11 @@ import { SvgIcon } from '@/shared/ui/SvgIcon';
 import { mockWhatYouGetOptions, mockWhatYouGetTitle } from '../mocks';
 import s from './WhatYouGet.module.scss';
 
-interface IconButtonProps {
+interface WhatYouGetProps {
   className?: string;
 }
 
-export const WhatYouGet: React.FC<IconButtonProps> = (props) => {
+export const WhatYouGet: React.FC<WhatYouGetProps> = (props) => {
   const { className } = props;
 
   return (

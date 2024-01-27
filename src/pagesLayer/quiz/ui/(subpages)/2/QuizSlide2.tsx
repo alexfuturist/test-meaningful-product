@@ -1,6 +1,5 @@
 'use client';
 import React from 'react';
-import cn from 'classnames';
 import s from './QuizSlide2.module.scss';
 import { mockQuizSlide2Title } from '@/pagesLayer/quiz/mocks';
 import { Input } from '@/shared/ui/Input';
@@ -12,14 +11,7 @@ import { Controller, useForm } from 'react-hook-form';
 import { schema } from './QuizSlide2.schema';
 import { useQuizForm } from '@/shared/providers/QuizFormProvider';
 
-interface IconButtonProps {
-  className?: string;
-  date: string;
-}
-
-export const QuizSlide2: React.FC<IconButtonProps> = (props) => {
-  const { className } = props;
-
+export const QuizSlide2: React.FC = () => {
   const router = useRouter();
 
   const { setEmail, formData } = useQuizForm();
@@ -42,7 +34,7 @@ export const QuizSlide2: React.FC<IconButtonProps> = (props) => {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className={cn(s.QuizSlide2, className)}
+      className={s.QuizSlide2}
       noValidate
     >
       <div>

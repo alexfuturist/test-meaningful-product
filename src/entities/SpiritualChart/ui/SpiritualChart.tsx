@@ -5,12 +5,12 @@ import dayjs from 'dayjs';
 import { SvgIcon } from '@/shared/ui/SvgIcon';
 import s from './SpiritualChart.module.scss';
 
-interface IconButtonProps {
+interface SpiritualChartProps {
   className?: string;
   date: string;
 }
 
-export const SpiritualChart: React.FC<IconButtonProps> = (props) => {
+export const SpiritualChart: React.FC<SpiritualChartProps> = (props) => {
   const { className, date } = props;
 
   const formattedDate = dayjs(date);

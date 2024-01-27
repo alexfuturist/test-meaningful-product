@@ -5,11 +5,11 @@ import { SvgIcon } from '@/shared/ui/SvgIcon';
 import s from './SpiritualPlanProgressbar.module.scss';
 import { mockSpiritualPlanTitle } from '../mocks';
 
-interface IconButtonProps {
+interface SpiritualPlanProgressbarProps {
   className?: string;
 }
 
-export const SpiritualPlanProgressbar: React.FC<IconButtonProps> = (props) => {
+export const SpiritualPlanProgressbar: React.FC<SpiritualPlanProgressbarProps> = (props) => {
   const { className } = props;
 
   return (

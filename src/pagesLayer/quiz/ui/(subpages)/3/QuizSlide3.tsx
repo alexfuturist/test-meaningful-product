@@ -1,6 +1,5 @@
 'use client';
 import React from 'react';
-import cn from 'classnames';
 import s from './QuizSlide3.module.scss';
 import { mockSpiritualChartData } from '../../../mocks';
 import { SpiritualChart } from '@/entities/SpiritualChart';
@@ -10,14 +9,7 @@ import { useRouter } from 'next/navigation';
 import { useQuizForm } from '@/shared/providers/QuizFormProvider';
 import { IFormData } from '@/shared/providers/QuizFormProvider/QuizFormProvider';
 
-interface IconButtonProps {
-  className?: string;
-  date: string;
-}
-
-export const QuizSlide3: React.FC<IconButtonProps> = (props) => {
-  const { className } = props;
-
+export const QuizSlide3: React.FC = () => {
   const router = useRouter();
 
   const { formData } = useQuizForm();
@@ -44,7 +36,7 @@ export const QuizSlide3: React.FC<IconButtonProps> = (props) => {
   };
 
   return (
-    <div className={cn(s.QuizSlide3, className)}>
+    <div className={s.QuizSlide3}>
       <SpiritualChart date={mockSpiritualChartData.date} />
       <Button
         disabled={!formData.email}
