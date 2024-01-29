@@ -1,3 +1,7 @@
 .QiuzLayout {
-  padding: 0 24px;
+
+  &__content {
+    margin-top: var(--header-height);
+    padding: 0 24px;
+  }
 }

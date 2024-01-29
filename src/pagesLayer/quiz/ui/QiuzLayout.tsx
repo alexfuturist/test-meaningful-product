@@ -25,7 +25,7 @@ export const QiuzLayout: React.FC<QiuzLayoutProps> = ({ children }) => {
   return (
     <>
       <Header onBackButtonClick={handleBack} />
-      <main className={s.QiuzLayout}>{children}</main>
+      <main className={s.QiuzLayout__content}>{children}</main>
     </>
   );
 };

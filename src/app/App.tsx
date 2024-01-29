@@ -8,9 +8,5 @@ interface AppProps {
 }
 
 export const App: React.FC<AppProps> = ({ children }) => {
-  return (
-    <div className="App">
-      <QuizFormProvider>{children}</QuizFormProvider>
-    </div>
-  );
+  return <QuizFormProvider>{children}</QuizFormProvider>;
 };
