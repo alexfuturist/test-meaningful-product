@@ -27,7 +27,7 @@ export const RadioButton: React.FC<RadioButtonProps> = (props) => {
         value={value}
         checked={isChecked}
         onChange={handleRadioChange}
-        className={s.RadioButton__input}
+        className="visually-hidden"
       />
       {isMostPopular && <p className={s.RadioButton__top}>MOST POPULAR</p>}
       <div className={s.RadioButton__content}>

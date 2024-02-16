@@ -27,7 +27,10 @@ export const SpiritualChart: React.FC<SpiritualChartProps> = (props) => {
           <p className={s['SpiritualChart__date-top']}>{`${month} ${day}`}</p>
           <p className={s['SpiritualChart__date-bottom']}>{year}</p>
         </div>
-        <SvgIcon name="spiritual-chart" />
+        <SvgIcon
+          className={s['SpiritualChart__chart-icon']}
+          name="spiritual-chart"
+        />
       </div>
     </div>
   );
