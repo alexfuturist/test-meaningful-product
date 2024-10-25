@@ -7,6 +7,7 @@ Check out the deployed application by the link - [https://test-meaningful-produc
 ## Basic A/B Testing Concept:
 **Objective: Improve user engagement and conversion rates on the quiz form and landing page.**
 
+
 **1. Possible UI/UX improvements to increase the conversion of filling out the form and choosing a tariff plan:**
 - Increase the time on the first slide from 2 to 4 seconds, so that the user has time to read the whole text;
 - Change the error text for the email input if it is entered incorrectly from "Error" to "Enter a valid email address" (if the entered value is incorrect) and "Field is required" (if the field is empty);
